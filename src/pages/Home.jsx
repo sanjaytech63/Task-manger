@@ -253,15 +253,30 @@ const Home = () => {
               </motion.div>
             </AnimatePresence>
 
+            <div className="flex justify-center mt-8 gap-4 md:hidden">
+              <button 
+                onClick={prevTestimonial}
+                className="bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition"
+              >
+                <FiChevronLeft size={24} />
+              </button>
+              <button 
+                onClick={nextTestimonial}
+                className="bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition"
+              >
+                <FiChevronRight size={24} />
+              </button>
+            </div>
+
             <button 
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+              className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
             >
               <FiChevronLeft size={24} />
             </button>
             <button 
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+              className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
             >
               <FiChevronRight size={24} />
             </button>
