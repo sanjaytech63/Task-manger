@@ -11,6 +11,11 @@ const Header = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/todo", label: "Todo" },
+    { path: "/space-earth", label: "SpaceEarth" },
+    { path: "/counter", label: "Counter" },
+    { path: "/space-shooter", label: "SpaceShooter" },
+    { path: "/snack", label: "Snack" },
+    { path: "/flappy-bird", label: "FlappyBird" },
     { path: "/about", label: "About" },
     { path: "/services", label: "Services" },
     { path: "/contact", label: "Contact" },
@@ -44,7 +49,8 @@ const Header = () => {
   };
 
   return (
-    <motion.header 
+   <div className="">
+     <motion.header 
       className="sticky top-0 z-50 bg-white shadow-md"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -184,6 +190,7 @@ const Header = () => {
         </AnimatePresence>
       </div>
     </motion.header>
+   </div>
   );
 };
 
